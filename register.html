@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup">
+        <h2>Start Membership</h2>
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email Address">
+        <input type="password" id="regPassword" placeholder="Password">
+        <input type="tel" id="regPhone" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" title="Phone number must be exactly 10 digits">
+        <button class="submit-btn" onclick="submitRegistration()">Register</button>
+        <button class="close-btn" onclick="window.close()">Close</button>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

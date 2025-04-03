@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Bradley Hand ITC; font-size: 100px;">ChapterOne</h1>
+        <h6>Online Book Store</h6>
+    </header>
+    
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li class="dropdown-arrow">Genre
+                <ul>
+                    <li>Science</li>
+                    <li>Technology</li>
+                    <li>History</li>
+                    <li>Fiction</li>
+                    <li>Non-Fiction</li>
+                </ul>
+                <li id="loginBtn" style="font-size: larger; cursor: pointer;">Login</li>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="section1">
+        <button id="register" class="blink"><a href="register.html">New Registration</a></button>
+    </section>
+    
+    <section id="section2">
+        <h2>Annual Day Countdown</h2>
+        <p id="countdown"></p>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="loginPopup">
+        <h2>Login</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="password" id="password" placeholder="Password">
+        <input type="tel" id="phone" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" title="Phone number must be exactly 10 digits">
+        <button id="log" onclick="submitLogin()">Submit</button>
+        <button id="log" class="close" onclick="closePopup()">Close</button>
+    </div>
+    
+    
+
+</body>
+</html>
+
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+</html>
